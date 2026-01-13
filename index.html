@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook Sesión 20: Diseñando para el Planeta - Sostenibilidad Aumentada</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S1-TM20</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 20: Diseñando para el Planeta - Sostenibilidad Aumentada</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 20 - 1o de Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,246 +38,406 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes comprendan cómo el Diseño Generativo puede aplicarse a la sostenibilidad.</li>
-                                        <li>Que aprendan a rediseñar un producto para minimizar el uso de material (dematerialización).</li>
-                                        <li>Que utilicen herramientas de medición para trabajar hacia un objetivo cuantitativo de reducción (-25%).</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
-                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
-                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
-                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
-                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Una versión final optimizada de un producto, que reduce su masa en al menos un 25%.</li>
-                                        <li>Un portafolio "Antes y Después" con capturas de pantalla y los datos de masa que demuestran el logro del objetivo.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Cuentas de Onshape para cada alumno.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                        <li>Documentos o presentaciones para el portafolio.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar que Onshape y Xolo están operativos.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Entender las dos estrategias de dematerialización (Shell & Infill, Optimización Topológica Manual). Estar familiarizado con la herramienta 'Mass Properties' en Onshape.</li>
-                                        <li><strong>Preparación de Ejemplos:</strong> Tener un modelo simple (ej. un soporte de teléfono) y haber practicado su rediseño para la reducción de masa, para anticipar el proceso y tener un ejemplo.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar Onshape para realizar vaciados y patrones estructurales para rediseñar objetos con menos material y comprender la sostenibilidad y el impacto ambiental del diseño.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué significa diseñar para sostenibilidad y por qué reducir material no es solo ahorrar, sino reducir impacto ambiental. Guíame a comprender qué es la optimización topológica o el diseño generativo (conceptual) y por qué las estructuras inspiradas en la naturaleza suelen ser fuertes y ligeras. Después ayúdame a identificar en mi modelo qué partes podrían vaciarse o aligerarse sin romperse y cómo medir una meta realista de reducción (ej. 25%).</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Sostenibilidad en el diseño: Es crear objetos usando la menor cantidad de recursos posible para cuidar el planeta, como cuando usamos menos cartón para hacer una caja igual de fuerte.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar Onshape para aligerar piezas mediante vaciados y patrones de panal.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes patrones estructurales y grosores de pared para entender limitaciones de resistencia.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Impresora 3D (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a Onshape (https://www.onshape.com/) y AstroPrint (https://www.astroprint.com/)</label>
+                        <label><input type="checkbox"> Calibradores o reglas para medir piezas físicas</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa diseño 3D paramétrico en Onshape</label>
+                        <label><input type="checkbox"> 📋 Para preparar impresión: Exportar STL desde Onshape → Cargar en AstroPrint → Configurar parámetros de impresión</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con cuidado, no tocar partes calientes, mantener superficie nivelada y verificar filamento.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre sostenibilidad y optimización de materiales (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si la impresora 3D no extruye:</strong> Verificar que el filamento no esté enredado y que la boquilla esté a la temperatura correcta.</li>
+<li><strong>Si la pieza no se pega a la cama:</strong> Limpiar la superficie de impresión y verificar la nivelación.</li>
+<li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Introducir la sesión como el momento de diseñar para el cliente más importante: el planeta.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador presenta la misión de hoy: diseñar con conciencia ambiental usando la lógica de la IA.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Saludos, diseñadores conscientes. Han diseñado para la función, la máquina y las personas. Hoy, diseñamos para nuestro cliente más importante: el planeta. Cada gramo de material tiene un coste energético y ambiental. Hoy, usarán las herramientas de IA más potentes no para crear algo nuevo, sino para hacer que algo existente sea más ligero, más eficiente y más respetuoso con el entorno.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como es habitual: 'Hola Xolo, listo para la Misión 20', seguido de su nombre, perfil y gustos. Esperen su confirmación.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos súper eficiencia ecológica a sus diseños 3D!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre sostenibilidad y optimización de materiales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A optimizar modelos 3D para que sean ligeros, fuertes y ecológicos.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros aeroespaciales en la NASA usan esta tecnología para crear satélites más ligeros que cuestan menos lanzar al espacio.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
-                <p>Presentar el concepto de dematerialización y el desafío cuantitativo de reducir la masa en un 25%.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Diseño para la Sostenibilidad y el Reto del 25% ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto de dematerialización y el objetivo de la misión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">La sostenibilidad tiene muchas facetas. Hoy nos enfocamos en la **dematerialización**: lograr la misma función con menos material. Recuerden el Diseño Generativo: su objetivo era la eficiencia estructural. Hoy, la meta es la sostenibilidad. La IA puede 'vaciar' una pieza, dejando solo el esqueleto estructural necesario. Su misión es tomar un objeto y rediseñarlo para reducir su masa en al menos un 25% sin sacrificar su función.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo aligerar piezas usando patrones inspirados en la naturaleza.</li>
+                            <li>Introduce el concepto de biomimética y diseño generativo.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar Onshape para identificar áreas de ahorro de material.</li>
+                            <li>Aprender sobre el impacto ambiental del diseño industrial.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El objetivo de hoy es tangible y medible. Al final de la sesión, podrán decir: <strong>'Yo entiendo cómo la optimización topológica es una herramienta para el diseño sostenible, y he rediseñado un producto para reducir su uso de material en al menos un 25%.'</strong></p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar Onshape para optimizar piezas y comprender la sostenibilidad.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a dar un paso gigante hacia el futuro del diseño. Abran su chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo diseñar de forma sostenible para salvar el planeta. No necesitan escribir un prompt especial, solo empiecen a platicar con él sobre cómo podemos usar menos plástico en nuestras impresiones 3D sin que se rompan. Él les explicará secretos de la naturaleza, como los panales de abejas, para que sus piezas sean increíbles. ¡Pregúntenle todo!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM (Aplicación de Principios de Diseño Generativo) ⏰ 12 minutos</h2>
-                <p>Fase de diálogo con Xolo para aprender las estrategias manuales de dematerialización y cómo usar las herramientas de Onshape.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Estrategias de Dematerialización ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre las dos estrategias principales para reducir material.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Entremos al A.I. GYM. Hoy Xolo es su consultor de sostenibilidad. No tenemos un botón de 'Diseño Generativo', pero aplicaremos sus principios manualmente. Para ello, consúltenle: <strong>'Xolo, explícame las dos estrategias principales de dematerialización: Vaciado Inteligente y Optimización Topológica Manual.'</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Guía de Consulta Técnica ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) El facilitador dirige a los estudiantes hacia el AI Advisor para las herramientas técnicas y la herramienta de medición.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Impresoras 3D conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique ingeniería biomimética.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar patrones tipo panal o nervaduras.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Exportar su archivo a AstroPrint y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a idear un proyecto aplicado en Onshape donde rediseñe un objeto para usar menos material sin perder fuerza. Quiero una vibe como “diseño ecológico”, “ingeniería biomimética” o “objeto ligero y resistente”. Luego guíame a crear dos versiones: versión original vs versión optimizada (vaciados, patrones tipo panal, nervaduras). Después genera un plan de modelado en Onshape y una forma de estimar el porcentaje de reducción."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Para aplicar estas estrategias, necesitarán herramientas técnicas. Pregunten al Advisor: **'How to use the 'Shell' tool in Onshape?'** o **'How to create a honeycomb pattern in a sketch?'**. Su objetivo es tangible: reducir la masa. Onshape tiene una herramienta de 'Mass Properties' para medir sus piezas. Úsenla para verificar su progreso y validar que han alcanzado el -25%.</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Tu pieza optimizada se ve tan resistente como la original en el simulador?</li>
+                            <li>¿Qué pasa si reducimos el grosor de las paredes internas a menos de 1mm?</li>
+                            <li>¿Funciona igual un patrón de panal hexagonal vs uno de líneas rectas?</li>
+                            <li>¿Cómo ayuda el uso de menos material a reducir el impacto ambiental de un producto?</li>
+                            <li>Si tu diseño imita una estructura natural (biomimética), ¿por qué crees que la naturaleza evolucionó para usar ese patrón?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a pasar de la teoría a la acción. Usen el chat para idear con XOLO un objeto cotidiano que puedan rediseñar. El flujo es simple: ideen el objeto, elijan un VIBE ecológico, obtengan su plan de modelado (GCS) y llévenlo a Onshape. Por ejemplo, podrían rediseñar un soporte para celular que use 30% menos material usando nervaduras. No olviden comparar su versión original con la optimizada para ver cuánto plástico ahorramos. Si tienen errores en el diseño o no saben cómo hacer un vaciado, pregúntenle a XOLO, él los ayudará a depurar su modelo. ¡Al final, preparen su archivo para la impresora!</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el patrón de panal. ¿Puedes enseñarme cómo hacer que mi diseño use estructuras de celosía (lattice) para ser aún más ligero?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Rediseño para la Reducción de Material) ⏰ 18 minutos</h2>
-                <p>Fase de trabajo práctico donde los estudiantes miden, rediseñan y verifican su modelo para alcanzar el objetivo de reducción de masa.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Análisis, Rediseño y Verificación ⏰ 18 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Los estudiantes ejecutan el ciclo completo de optimización de masa.</p>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué patrones estructurales funcionaron mejor.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué patrones de reducción funcionaron mejor en tu diseño? ¿Qué te sorprendió al comparar las dos versiones?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, al Brain Spark. Tienen 18 minutos. Primero, elijan un objeto que hayan diseñado y midan su masa inicial con 'Mass Properties'. Segundo, dialoguen con Xolo sobre la mejor estrategia de reducción para su pieza. Tercero, apliquen esa estrategia (Shell, cortes) consultando al Advisor si es necesario. Cuarto, verifiquen la nueva masa. Repitan el proceso de refinar y verificar hasta que alcancen o superen el objetivo del 25% de reducción. Finalmente, creen su portafolio "Antes y Después".</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi diseño optimizado usa patrones de panal. Me sorprendió que ahorramos un 25% de material manteniendo la fuerza."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
-                <p>Fase final de "Exposición de Eficiencia", donde los estudiantes presentan sus resultados cuantitativos.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre el proceso y la "estética de la eficiencia".</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                     Tiempo. Observen su portafolio "Antes y Después". Prepárense para compartir sus resultados: <strong>"Mi pieza pesaba X gramos. Ahora pesa Y gramos, una reducción del Z%. Sigue siendo funcional."</strong> Piensen también: ¿es esta nueva 'estética de la eficiencia' atractiva?
-                                </p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Pair (Exposición de Eficiencia) ⏰ 2 minutos</h3>
-                            <p>Los estudiantes presentan sus resultados cuantitativos y discuten los trade-offs.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    En parejas, es la "Exposición de Eficiencia". Presenten sus portafolios. Compartan los datos de reducción de masa. Discutan: ¿fue difícil reducir el material sin comprometer la función? ¿Cómo cambió el aspecto del objeto?
-                                </p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) El facilitador consolida la sesión, enfatizando el diseño con un propósito mayor.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    Han actuado como ingenieros conscientes. Han demostrado que un buen diseño no es solo lo que se añade, sino también lo que se puede quitar. Han utilizado la lógica de la IA para tomar decisiones con un impacto real y positivo, gramo a gramo. Esta mentalidad de optimización y sostenibilidad es una de las más valoradas en la industria. Han diseñado con un propósito mayor.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
